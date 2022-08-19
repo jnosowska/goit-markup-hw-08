@@ -1,14 +1,123 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2196f3;
+  --darkgrey: #2f303a;
+  --grey: #757575;
+  --lightgrey: #e5e5e5;
+  --lightcream: #ececec;
+  --notblack: #212121;
+  --notwhite: #f5f4fa;
+  --footerlinks: #ffffff99;
+  --productborder: #eeeeee;
+}
+
+/* Styles for whole website */
+
 body {
-  background: #ffffff;
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--grey);
+  background-color: var(--lightgrey);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
-.main-header {
+.wrapper {
+  background-color: var(--white);
+  width: 1600px;
 }
-.main-position {
-  background: #2f303a;
+
+.footer-link:hover,
+.footer-link:focus,
+.blue-text:hover,
+.blue-text:focus {
+  color: var(--blue);
 }
-.main-third-position {
-  background: #f5f4fa;
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166666666666667;
+  text-align: center;
+  color: var(--notblack);
+  
+.section-header{
 }
-.main-footer {
-  background: #2f303a;
+s
+/* Styles for header section */
+
+.header{
+  color:var(--white);
+  width: 1600px;
+height: 80px;
+}
+/* Styles for footer section */
+.footer {
+  width: 100%;
+  background-color: var(--darkgrey);
+}
+.address {
+  font-style: normal;
+}
+.blue-text {
+  color: var(--blue);
+}
+
+.white-logo {
+  color: var(--white);
+}
+.footer-link {
+  color: var(--footerlinks);
+}
+.footer-container {
+  flex-direction: column;
+  color: var(--white);
+}
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+}
+/* Styles for PORTFOLIO main section*/
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 94px;
+  list-style: none;
+}
+.filter-button {
+  background-color: var(--notwhite);
+  border-width: 0;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 3px;
+  padding: 6px 22px;
+  font-family: "Roboto";
+}
+.filter-button:focus,
+.filter-button:hover {
+  box-shadow: 0px 2px 2px rgba(000, 000, 000, 0.3);
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.product-card {
+  border: var(--productborder) solid 1px;
+  width: 370px;
+  height: 404px;
+}
+.product-card-header {
+  color: var(--darkgrey);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.product-card-text {
+  line-height: 1.88;
+  font-size: 16px;
+}
+.header-line-border {
+  border-bottom: var(--lightcream) solid 1px;
 }
