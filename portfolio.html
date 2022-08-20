@@ -6,20 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <h3><a href="./index.html">WebStudio</a></h3>
-        <nav>
-          <ul>
-            <li><a href="index.html">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+        <h3>
+          <a href="index.html" class="header-title text-decoration"
+            ><span class="blue-text">Web</span>Studio</a
+          >
+        </h3>
+        <nav class="nav">
+          <ul class="social-link white-point">
+            <li><a href="index.html" class="link">Agencja</a></li>
+            <li><a href="portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="contact.html" class="link">Kontakt</a></li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
+        <div>
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts-header text-decoration"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+48111111111" class="contacts-header text-decoration"
+            >+48 111 111 111</a
+          >
+        </div>
       </header>
       <main>
         <ul class="filter-buttons">
@@ -36,7 +53,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="all-product-card white-point">
           <li>
             <figure class="product-card">
               <img
@@ -181,18 +198,23 @@
       </main>
       <footer class="footer">
         <h3>
-          <a href="index.html" class="logo-style"
+          <a href="index.html" class="logo-style text-decoration"
             ><span class="blue-text">Web</span>Studio</a
           >
         </h3>
         <address>
-          <a href="" class="address">m. Warszawa, Aleje Jerozolimskie 21</a
+          <a href="" class="address text-decoration"
+            >m. Warszawa, Aleje Jerozolimskie 21</a
           ><br />
-          <a href="mailto:info@example.com" class="footer-link"
+          <a
+            href="mailto:info@example.com"
+            class="footer-link text-decoration normal-text"
             >info@example.com</a
           >
           <br />
-          <a href="+48111111111" class="footer-link">+48 111 111 111</a>
+          <a href="+48111111111" class="footer-link text-decoration normal-text"
+            >+48 111 111 111</a
+          >
         </address>
       </footer>
     </div>

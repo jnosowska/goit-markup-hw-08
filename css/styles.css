@@ -13,7 +13,6 @@
 }
 
 /* Styles for whole website */
-
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--grey);
@@ -25,7 +24,12 @@ body {
   background-color: var(--white);
   width: 1600px;
 }
-
+.social-link .link:hover,
+.social-link .link:focus,
+.blue-text:hover,
+.blue-text:focus {
+  color: var(--blue);
+}
 .footer-link:hover,
 .footer-link:focus,
 .blue-text:hover,
@@ -35,19 +39,151 @@ body {
 .section-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166666666666667;
+  line-height: 1.17;
   text-align: center;
   color: var(--notblack);
-  
-.section-header{
 }
-s
+.text-decoration {
+  text-decoration: none;
+}
+.normal-text {
+  font-style: normal;
+}
+.white-point {
+  color: var(--white);
+}
 /* Styles for header section */
-
-.header{
-  color:var(--white);
-  width: 1600px;
-height: 80px;
+.header {
+  background: var(--white);
+}
+.header-title {
+  color: var(--black);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--notblack);
+}
+.blue-text {
+  color: var(--blue);
+}
+.social-link .link {
+  text-decoration: none;
+}
+.contacts-header {
+  color: var(--grey);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-header:hover,
+.contacts-header:focus,
+.blue-text:hover,
+.blue-text:focus {
+  color: var(--blue);
+}
+/* Styles for Studio main section*/
+.button-section {
+  background-color: var(--darkgrey);
+}
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.main-button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 700px;
+}
+.article-text-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--notblack);
+}
+.short-article-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+.article-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+}
+.section-ourteam {
+  background: var(--notwhite);
+}
+.section-ourteam-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+}
+.our-team-box {
+background: var(--white)
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px;
+height: 368px;
+}
+.our-team-person {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+  background-color: var(--white);
+}
+.our-team-person-name {
+  font-weight: 500;
+  color: var(--notblack);
 }
 /* Styles for footer section */
 .footer {
@@ -57,26 +193,22 @@ height: 80px;
 .address {
   font-style: normal;
 }
-.blue-text {
-  color: var(--blue);
-}
-
-.white-logo {
+.logo-style {
   color: var(--white);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .footer-link {
   color: var(--footerlinks);
 }
-.footer-container {
-  flex-direction: column;
+
+/* Styles for PORTFOLIO main section*/
+.address {
   color: var(--white);
 }
-.footer-link-list {
-  list-style: none;
-  padding: 0;
-}
-/* Styles for PORTFOLIO main section*/
-
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -109,15 +241,18 @@ height: 80px;
   height: 404px;
 }
 .product-card-header {
-  color: var(--darkgrey);
-  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--darkgrey);
 }
 .product-card-text {
   line-height: 1.88;
   font-size: 16px;
-}
-.header-line-border {
-  border-bottom: var(--lightcream) solid 1px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--grey);
 }
