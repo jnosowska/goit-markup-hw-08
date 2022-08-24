@@ -41,13 +41,7 @@ body {
 .blue-text:focus {
   color: var(--blue);
 }
-.section-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--notblack);
-}
+
 .text-decoration {
   text-decoration: none;
 }
@@ -55,22 +49,22 @@ body {
   font-style: normal;
 }
 .white-point {
-  color: var(--white);
+  list-style: none;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 /* Styles for header section */
 .header {
+  display: flex;
   background: var(--white);
   align-items: center;
-  gap: 93px;
-  flex-direction: row;
-  padding: 25px 0 24px 0;
-  display: flex;
 }
-
+.header-line {
+  border-bottom: 1px solid var(--lightgrey);
+}
 .header-title {
   color: var(--black);
   font-family: "Raleway";
@@ -79,6 +73,20 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.nav {
+  margin-right: 371px;
+}
+.social-link {
+  display: flex;
+  margin-right: 46px;
+}
+.social-link > .item:not(:last-child) {
+  margin-right: 46px;
+}
+.social-link .link {
+  text-decoration: none;
+  display: block;
 }
 .link {
   font-family: "Roboto";
@@ -92,14 +100,6 @@ body {
 .blue-text {
   color: var(--blue);
 }
-.social-link {
-  display: flex;
-  margin-right: 317px;
-  margin-left: 93px;
-}
-.social-link .link {
-  text-decoration: none;
-}
 .contacts-header {
   color: var(--grey);
   font-family: "Roboto";
@@ -108,6 +108,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact-header > .contacts-header:not(:last-child) {
+  margin-right: 46px;
+}
+.contact-header {
+  margin-right: 46px;
+  display: flex;
+}
+.contact-header .contacts-header {
+  display: block;
 }
 .contacts-header:hover,
 .contacts-header:focus,
