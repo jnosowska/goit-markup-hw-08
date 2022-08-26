@@ -69,7 +69,7 @@ body {
   color: var(--black);
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -91,7 +91,7 @@ body {
 .link {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -104,7 +104,7 @@ body {
   color: var(--grey);
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -126,58 +126,78 @@ body {
   color: var(--blue);
 }
 /* Styles for Studio main section*/
+/* 1. button section */
 .button-section {
   background-color: var(--darkgrey);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 .title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 900px;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  margin: 0px;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .main-button {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   background: var(--blue);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
-  margin-left: 700px;
   cursor: pointer;
+  margin-bottom: 200px;
 }
 .button-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
 }
+
+/* 2. Article section- our work */
+.article-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .article-text-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--notblack);
+  margin-bottom: 10px;
 }
 .short-article-text {
+  width: 270px;
+  height: 75px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -186,25 +206,57 @@ body {
 .article-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--notblack);
+  margin: 0%;
 }
+.section-our-work {
+  display: flex;
+  flex-direction: column;
+}
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0%;
+  padding-left: 0px;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+/* 3. Our team section */
+
 .section-ourteam {
   background: var(--notwhite);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .section-ourteam-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--notblack);
+  margin: 0;
+  padding-top: 94px;
+}
+.our-team {
+  margin-top: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px;
+  padding-bottom: 94px;
+  margin: 0;
 }
 .our-team-box {
   width: 270px;
@@ -213,12 +265,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin: 0;
 }
-
 .our-team-person {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -227,9 +279,10 @@ body {
   background-color: var(--white);
 }
 .our-team-person-name {
-  font-weight: 500;
+  font-weight: 500px;
   color: var(--notblack);
 }
+
 /* Styles for footer section */
 .footer {
   width: 100%;
@@ -237,8 +290,10 @@ body {
 }
 .footer-container {
   flex-direction: column;
-  padding: 60px 0;
-  margin-left: 215px;
+  margin: 0;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   font-style: normal;
@@ -247,7 +302,7 @@ body {
   color: var(--white);
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -271,7 +326,7 @@ body {
   border-width: 0;
   height: 38px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 26px;
   border-radius: 3px;
   padding: 6px 22px;
@@ -303,7 +358,7 @@ body {
 .product-card-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -312,11 +367,10 @@ body {
 .product-card-text {
   line-height: 1.88;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
   letter-spacing: 0.03em;
   color: var(--grey);
 }
-
 .all-product-cards .item-cards {
   display: block;
 }
