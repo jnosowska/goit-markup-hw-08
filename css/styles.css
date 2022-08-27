@@ -140,7 +140,7 @@ body {
 .title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -165,7 +165,7 @@ body {
 .button-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -184,7 +184,7 @@ body {
 .article-text-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -197,7 +197,7 @@ body {
   height: 75px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -206,7 +206,7 @@ body {
 .article-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -238,7 +238,7 @@ body {
 .section-ourteam-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -270,7 +270,7 @@ body {
 .our-team-person {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -302,7 +302,7 @@ body {
   color: var(--white);
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -320,13 +320,14 @@ body {
   gap: 8px;
   margin-top: 94px;
   list-style: none;
+  padding: 0;
 }
 .filter-button {
   background-color: var(--notwhite);
   border-width: 0;
   height: 38px;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 26px;
   border-radius: 3px;
   padding: 6px 22px;
@@ -354,23 +355,40 @@ body {
   flex-basis: calc((100% - 90px) / 4);
   margin: 0;
 }
-
 .product-card-header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--darkgrey);
+  margin-bottom: 4px;
 }
 .product-card-text {
   line-height: 1.88;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--grey);
+  text-align: left;
+  margin: 0;
 }
 .all-product-cards .item-cards {
   display: block;
+}
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.portfolio-text-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: left;
+  gap: 4px;
 }
