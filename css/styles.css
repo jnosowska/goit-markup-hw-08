@@ -10,6 +10,8 @@
   --notwhite: #f5f4fa;
   --footerlinks: #ffffff99;
   --productborder: #eeeeee;
+  --iconcolor: #afb1b8;
+  --footericon: rgba(255, 255, 255, 0.1);
 }
 * {
   box-sizing: border-box;
@@ -26,7 +28,7 @@ body {
 }
 .wrapper {
   background-color: var(--white);
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
 }
 .social-link .link:hover,
@@ -56,6 +58,16 @@ body {
   margin: 0 auto;
   height: 100%;
 }
+
+.footer-icon:hover,
+.footer-icon:focus,
+.team-card-icon:hover,
+.team-card-icon:focus {
+  background-color: var(--blue);
+  fill: var(--white);
+  cursor: pointer;
+}
+
 /* Styles for header section */
 .header {
   display: flex;
@@ -91,7 +103,7 @@ body {
 .link {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -104,7 +116,7 @@ body {
   color: var(--grey);
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -282,18 +294,33 @@ body {
   font-weight: 500px;
   color: var(--notblack);
 }
+/* /* Our clients section */
+.section-ourclients {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+  padding-top: 94px;
+}
 
 /* Styles for footer section */
 .footer {
-  width: 100%;
   background-color: var(--darkgrey);
 }
 .footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer-row {
   flex-direction: column;
   margin: 0;
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: left;
 }
 .address {
   font-style: normal;
@@ -391,4 +418,16 @@ body {
   padding-bottom: 20px;
   justify-content: left;
   gap: 4px;
+}
+.footer-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding-top: 72px;
+  padding-left: 70px;
 }
