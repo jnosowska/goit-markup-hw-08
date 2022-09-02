@@ -67,6 +67,14 @@ body {
   fill: var(--white);
   cursor: pointer;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 
 /* Styles for header section */
 .header {
@@ -313,7 +321,6 @@ body {
 }
 .footer-container {
   display: flex;
-  align-items: center;
 }
 .footer-row {
   flex-direction: column;
@@ -322,6 +329,13 @@ body {
   padding-bottom: 60px;
   align-items: left;
 }
+.footer-row-icons {
+  flex-direction: column;
+  margin: 0;
+  padding-top: 72px;
+  padding-left: 70px;
+}
+
 .address {
   font-style: normal;
 }
@@ -335,6 +349,19 @@ body {
 }
 .footer-link {
   color: var(--footerlinks);
+}
+.footer-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer-icons {
+  list-style: none;
 }
 
 /* Styles for PORTFOLIO main section*/
@@ -418,16 +445,4 @@ body {
   padding-bottom: 20px;
   justify-content: left;
   gap: 4px;
-}
-.footer-header {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
-  padding-top: 72px;
-  padding-left: 70px;
 }
