@@ -335,6 +335,13 @@ body {
   padding-top: 72px;
   padding-left: 70px;
 }
+.footer-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--footericon);
+  border-radius: 50%;
+  fill: var(--white);
+}
 
 .address {
   font-style: normal;
