@@ -166,7 +166,7 @@ body {
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url(/images/imgbutton.jpg);
+    url(../images/imgbutton.jpg);
   background-size: 1600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
