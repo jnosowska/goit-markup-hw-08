@@ -45,11 +45,21 @@
           <div class="contact-header">
             <a
               href="mailto:info@devstudio.com"
-              class="contacts-header text-decoration"
-              >info@devstudio.com</a
+              class="contacts-header text-decoration icon-header"
             >
-            <a href="tel:+48111111111" class="contacts-header text-decoration"
-              >+48 111 111 111</a
+              <svg class="icon-space" width="16" height="12">
+                <use xlink:href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+
+            <a
+              href="tel:+48111111111"
+              class="contacts-header text-decoration icon-header"
+              ><svg class="icon-space" width="10" height="16">
+                <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
             >
           </div>
         </div>
@@ -230,30 +240,81 @@
       </main>
       <footer class="footer">
         <div class="container footer-container">
-          <h3>
-            <a href="index.html" class="logo-style text-decoration"
-              ><span class="blue-text">Web</span>Studio</a
-            >
-          </h3>
-          <address>
-            <a href="" class="address text-decoration"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-            <p>
-              <a
-                href="mailto:info@example.com"
-                class="footer-link text-decoration normal-text"
-                >info@example.com</a
+          <div class="footer-row">
+            <h3>
+              <a href="index.html" class="logo-style text-decoration"
+                ><span class="blue-text">Web</span>Studio</a
               >
-            </p>
-            <p>
-              <a
-                href="+48111111111"
-                class="footer-link text-decoration normal-text"
-                >+48 111 111 111</a
+            </h3>
+            <address>
+              <a href="" class="address text-decoration"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
               >
-            </p>
-          </address>
+              <p>
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-link text-decoration normal-text"
+                  >info@example.com</a
+                >
+              </p>
+              <p>
+                <a
+                  href="+48111111111"
+                  class="footer-link text-decoration normal-text"
+                  >+48 111 111 111</a
+                >
+              </p>
+            </address>
+          </div>
+          <div class="footer-row-icons">
+            <h3 class="footer-header">Dołącz do nas</h3>
+            <ul class="footer-icons">
+              <li>
+                <svg class="footer-icon">
+                  <use
+                    xlink:href="./images/icons.svg#icon-instagram"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-icon">
+                  <use
+                    xlink:href="./images/icons.svg#icon-twitter"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-icon">
+                  <use
+                    xlink:href="./images/icons.svg#icon-facebook"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-icon">
+                  <use
+                    xlink:href="./images/icons.svg#icon-linkedin"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

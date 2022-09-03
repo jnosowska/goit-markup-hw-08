@@ -12,6 +12,7 @@
   --productborder: #eeeeee;
   --iconcolor: #afb1b8;
   --footericon: rgba(255, 255, 255, 0.1);
+  --background: rgba(47, 48, 58, 0.4);
 }
 * {
   box-sizing: border-box;
@@ -106,7 +107,6 @@ body {
 }
 .social-link .link {
   text-decoration: none;
-  display: block;
 }
 .link {
   font-family: "Roboto";
@@ -133,11 +133,10 @@ body {
   margin-right: 46px;
 }
 .contact-header {
-  margin-right: 46px;
+  margin-right: 0;
   display: flex;
-}
-.contact-header .contacts-header {
-  display: block;
+  justify-content: center;
+  align-items: center;
 }
 .contacts-header:hover,
 .contacts-header:focus,
@@ -145,10 +144,32 @@ body {
 .blue-text:focus {
   color: var(--blue);
 }
+.icon-header:hover,
+.icon-header:focus {
+  fill: var(--blue);
+}
+
+.icon-header {
+  fill: var(--grey);
+  display: flex;
+  flex-direction: row;
+}
+.icon-space {
+  margin-right: 10px;
+}
 /* Styles for Studio main section*/
 /* 1. button section */
 .button-section {
   background-color: var(--darkgrey);
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(/images/img-button.jpg);
+  background-size: 1600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,6 +233,15 @@ body {
   color: var(--notblack);
   margin-bottom: 10px;
 }
+.article-icon {
+  background-color: var(--notwhite);
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .short-article-text {
   width: 270px;
   height: 75px;
@@ -237,6 +267,8 @@ body {
 .section-our-work {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .our-work {
   display: flex;
@@ -280,7 +312,6 @@ body {
 }
 .our-team-box {
   width: 270px;
-  height: 368px;
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -297,13 +328,43 @@ body {
   letter-spacing: 0.03em;
   color: var(--grey);
   background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
 }
 .our-team-person-name {
   font-weight: 500px;
   color: var(--notblack);
 }
+.icon-team {
+  display: flex;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.icon-team-link {
+  fill: var(--iconcolor);
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.icon-team-link:hover {
+  fill: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
 /* /* Our clients section */
 .section-ourclients {
+  padding-top: 94px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section-ourclients-header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -311,10 +372,31 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--notblack);
-  padding-top: 94px;
+  margin: 0;
+  padding-bottom: 50px;
 }
-
+.icons-ourclient {
+  padding-bottom: 94px;
+}
+.icons-logos {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.icon-ourclient {
+  border: 1px solid var(--iconcolor);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--iconcolor);
+}
+.icon-ourclient:hover {
+  cursor: pointer;
+  fill: var(--blue);
+  border: 1px solid var(--blue);
+}
 /* Styles for footer section */
 .footer {
   background-color: var(--darkgrey);
@@ -342,7 +424,6 @@ body {
   border-radius: 50%;
   fill: var(--white);
 }
-
 .address {
   font-style: normal;
 }
@@ -369,6 +450,10 @@ body {
 }
 .footer-icons {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
 }
 
 /* Styles for PORTFOLIO main section*/
@@ -452,4 +537,9 @@ body {
   padding-bottom: 20px;
   justify-content: left;
   gap: 4px;
+}
+.item-cards:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
