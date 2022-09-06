@@ -33,7 +33,9 @@
           <nav class="nav">
             <ul class="social-link white-point">
               <li class="item">
-                <a href="index.html" class="link">Agencja</a>
+                <a href="index.html" class="link active-link"
+                  ><span class="blue-text">Agencja</span></a
+                >
               </li>
               <li class="item">
                 <a href="portfolio.html" class="link">Portfolio</a>
@@ -135,29 +137,32 @@
           <div class="container section-our-work">
             <h2 class="article-header">Czym się zajmujemy</h2>
             <ul class="our-work white-point">
-              <li>
+              <li class="list-our-work">
                 <img
                   src="images/img1.jpg"
                   alt="writing"
                   height="294"
                   width="370"
                 />
+                <p class="text-our-work">Aplikacje komputerowe</p>
               </li>
-              <li>
+              <li class="list-our-work">
                 <img
                   src="images/img2.jpg"
                   alt="project"
                   height="294"
                   width="370"
                 />
+                <p class="text-our-work">Aplikacje mobilne</p>
               </li>
-              <li>
+              <li class="list-our-work">
                 <img
                   src="images/img3.jpg"
                   alt="drawing"
                   height="294"
                   width="370"
                 />
+                <p class="text-our-work">Rozwiązania graficzne</p>
               </li>
             </ul>
           </div>
@@ -545,6 +550,11 @@
           </div>
         </div>
       </footer>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" data-modal-close type="button">x</button>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
