@@ -38,12 +38,14 @@ body {
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus,
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-decoration {
@@ -68,6 +70,7 @@ body {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);s
 }
 .icon {
   display: inline-block;
@@ -144,16 +147,19 @@ body {
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-header:hover,
 .icon-header:focus {
   fill: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-header {
   fill: var(--grey);
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .icon-space {
   margin-right: 10px;
@@ -172,6 +178,7 @@ body {
   transform: translateY(9px);
   border-radius: 2px;
   position: absolute;
+  
 }
 
 /* Styles for Studio main section*/
@@ -392,6 +399,7 @@ body {
   fill: var(--white);
   background-color: var(--blue);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* /* Our clients section */
@@ -525,6 +533,7 @@ body {
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all-product-cards {
   display: flex;
@@ -551,6 +560,7 @@ body {
 }
 .product-card:hover .overlay {
   transform: translatex(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -618,6 +628,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* STYLES FOR MODAL WINDOW */
@@ -663,4 +674,5 @@ body {
   color: var(--blue);
   border: 1px solid var(--blue);
   transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
