@@ -586,37 +586,37 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
-          <form>
-            <label>
-              Imię
-              <input type="email" name="email" class="modal-name" />
-            </label>
 
-            <label>
-              Telefon
-              <input type="tel" name="phone_number" />
+          <label>
+            Imię
+            <input type="email" name="email" class="modal-name" />
+          </label>
+
+          <label>
+            Telefon
+            <input type="tel" name="phone_number" />
+          </label>
+          <label class="modal-label">
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Komentarz
+            <textarea
+              name="comment"
+              placeholder="Wprowadź tekst"
+              class="text-area text-comment"
+            ></textarea>
+          </label>
+          <div class="checkbox-privacy">
+            <input type="checkbox" id="check" />
+            <label for="check" class="modal-label-privacy">
+              Oświadczam, iż akceptuję
+              <a href="" class="privacy-link">Regulamin</a> i
+              <a href="" class="privacy-link">Politykę Prywatności.</a>
             </label>
-            <label class="modal-label">
-              Email
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Komentarz
-              <textarea
-                name="comment"
-                rows="6"
-                placeholder="Wprowadź tekst"
-              ></textarea>
-            </label>
-            <div class="checkbox-privacy">
-              <input type="checkbox" id="check" />
-              <label for="check" class="modal-label-privacy">
-                Oświadczam, iż akceptuję
-                <a href="" class="privacy-link">Regulamin</a> i
-                <a href="" class="privacy-link">Politykę Prywatności.</a>
-              </label>
-            </div>
-          </form>
+          </div>
+
           <button type="submit" class="send-button">Wyślij</button>
         </div>
       </div>

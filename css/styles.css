@@ -503,6 +503,8 @@ body {
   gap: 10px;
 }
 
+/* section newsletter (footer) */
+
 .newsletter {
   align-items: center;
   justify-content: center;
@@ -542,6 +544,8 @@ body {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  padding-left: 16px;
 }
 .sign-up:focus {
   border: 1px solid rgba(33, 150, 243, 0);
@@ -739,6 +743,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  font-size: 12px;
 }
 .close-button {
   position: absolute;
@@ -772,28 +777,47 @@ body {
   margin-left: 40px;
   margin-right: 40px;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  padding-left: 40px;
-  padding-right: 40px;
-  gap: 28px;
-}
+
 label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}
-.modal-label-privacy {
-  flex-direction: row;
-  gap: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
 }
 .modal-icon {
   background-color: var(--white);
   fill: var(--notblack);
 }
+
+/* section comment modal */
+.text-area {
+  width: 448px;
+  height: 40px;
+  display: block;
+  margin: 4px 0 0 0;
+  border-radius: 4px;
+  border: rgba(33, 33, 33, 0.2) 1px solid;
+  padding: 0 0 0 30px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-area:hover,
+.text-area:focus,
+.text-area:active {
+  border: var(--blue) 1px solid;
+  box-shadow: none;
+  outline: none;
+}
+/* section send button modal */
+
 .send-button {
   width: 200px;
   height: 50px;
@@ -825,8 +849,8 @@ label {
 
 .checkbox-privacy {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 8px;
 }
 
@@ -842,8 +866,10 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3px;
-  padding-top: 4px;
+  margin-bottom: 3px;
+  margin-top: 4px;
+  margin-left: 45px;
+  margin-top: 25px;
 }
 .modal-label-privacy {
   font-family: "Roboto";
@@ -851,8 +877,10 @@ input[type="checkbox"] {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
+  display: block;
+  padding: 0;
+  margin-top: 22px;
 }
 .privacy-link {
   color: var(--blue);
