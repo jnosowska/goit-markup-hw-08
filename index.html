@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <title>Studio</title>
   </head>
   <body>
@@ -548,6 +552,27 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter">
+            <p class="newsletter-title">Zapisz się do newslettera</p>
+            <input
+              type="email"
+              name="email"
+              class="sign-up"
+              placeholder="Email"
+            />
+          </div>
+          <button type="submit" class="button-newsletter">
+            Zapisz się
+            <svg class="newsletter-icon">
+              <use
+                xlink:href="./images/icons.svg#icon-aeroplane"
+                width="24"
+                height="24"
+                x="5"
+                y="5"
+              ></use>
+            </svg>
+          </button>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
@@ -560,6 +585,39 @@
           >
             <span aria-hidden="true">&times;</span>
           </button>
+          <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+          <form>
+            <label>
+              Imię
+              <input type="email" name="email" class="modal-name" />
+            </label>
+
+            <label>
+              Telefon
+              <input type="tel" name="phone_number" />
+            </label>
+            <label class="modal-label">
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Komentarz
+              <textarea
+                name="comment"
+                rows="6"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <div class="checkbox-privacy">
+              <input type="checkbox" id="check" />
+              <label for="check" class="modal-label-privacy">
+                Oświadczam, iż akceptuję
+                <a href="" class="privacy-link">Regulamin</a> i
+                <a href="" class="privacy-link">Politykę Prywatności.</a>
+              </label>
+            </div>
+          </form>
+          <button type="submit" class="send-button">Wyślij</button>
         </div>
       </div>
     </div>
