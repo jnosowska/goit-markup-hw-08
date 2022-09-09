@@ -587,18 +587,49 @@
           </button>
           <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
 
-          <label>
+          <label for="full-name" class="modal-label">
             Imię
-            <input type="email" name="email" class="modal-name" />
+            <input
+              type="text"
+              name="user-name"
+              class="form-input"
+              id="full-name"
+            />
+            <svg class="modal-icon icon-modal-person">
+              <use
+                xlink:href="./images/icons.svg#icon-person"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
           </label>
 
-          <label>
+          <label for="phone_number" class="modal-label">
             Telefon
-            <input type="tel" name="phone_number" />
+            <input
+              type="tel"
+              name="phone_number"
+              class="form-input"
+              id="phone_number"
+            />
+            <svg class="modal-icon icon-modal-phone">
+              <use
+                xlink:href="./images/icons.svg#icon-phone"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
           </label>
-          <label class="modal-label">
+          <label for="email" class="modal-label">
             Email
-            <input type="email" name="email" />
+            <input type="email" name="email" class="form-input" id="email" />
+            <svg class="modal-icon icon-modal-mail">
+              <use
+                xlink:href="./images/icons.svg#icon-email"
+                width="25"
+                height="20"
+              ></use>
+            </svg>
           </label>
           <label>
             Komentarz
