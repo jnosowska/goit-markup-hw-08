@@ -1,0 +1,46 @@
+// colors
+$primary-color: #fff;
+$primary-text: #757575;
+$black: #000;
+$hover-text: #2196f3;
+$background-footer: #2f303a;
+$background-outside: #e5e5e5;
+$header-line: #ececec;
+$secondary-text: #212121;
+$background-card: #f5f4fa;
+$footer-link: #ffffff99;
+$border: #eeeeee;
+$icon-bacground: #afb1b8;
+$footer-icon: #ffffff1a;
+$background: #75757580;
+$background-modal: #00000033;
+$border-color: #21212133;
+
+// styles for fonts
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+  "extrabold": 900,
+);
+$font-size: (
+  "standard": 14px,
+  "enlarged": 16px,
+  "cardheader": 18px,
+  "section-header": 36px,
+  "logo-font": 26px,
+  "main-text": 44px,
+);
+$letter-spacing: (
+  "standard": 0.03em,
+  "header": 0.06em,
+  "links": 0.02em,
+);
+$standard-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
+
+// mixins
+
+@mixin center {
+  margin: 0 auto;
+}

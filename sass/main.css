@@ -1,0 +1,21 @@
+body {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */

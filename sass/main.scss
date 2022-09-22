@@ -1,0 +1,23 @@
+@import "./utils/variables";
+
+body {
+  color: $primary-text;
+  font-family: $standard-font;
+  background-color: $background-outside;
+  font-size: map-get($font-size, standard);
+  letter-spacing: map-get($letter-spacing, standard);
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: $primary-color;
+  width: 100%;
+  @include center;
+}
+
+.container {
+  width: 1200px;
+  @include center;
+  height: 100%;
+}
