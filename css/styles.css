@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 /* Styles for whole website */
-body {
+/* body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--grey);
   background-color: var(--lightgrey);
@@ -38,7 +38,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: 100%;
-}
+} */
 
 /* .icon {
   display: inline-block;
@@ -50,15 +50,15 @@ body {
 } */
 
 /* Styles for header section */
-.header {
+/* .header {
   display: flex;
   background: var(--white);
   align-items: center;
-}
-.header__line {
+} */
+/* .header__line {
   border-bottom: 1px solid var(--lightgrey);
-}
-.header__title {
+} */
+/* .header__title {
   color: var(--black);
   font-family: "Raleway";
   font-style: normal;
@@ -71,18 +71,18 @@ body {
 .header__nav {
   margin-right: 371px;
 }
-.header__list {
+.header__nav-list {
   display: flex;
   margin-right: 46px;
-  list-style: none;
-}
-.header__list > .header__item:not(:last-child) {
+  /* list-style: none;
+} */
+/* .header__nav-list > .header__nav-list-item:not(:last-child) {
   margin-right: 46px;
 }
-.header__list .header__link {
+.header__nav-list .header__nav-list-item-link {
   text-decoration: none;
-}
-.header__link {
+} */
+/* .header__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -90,18 +90,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--notblack);
-}
-.header__title-color {
+} */
+/* .header__title-color {
   color: var(--blue);
-}
-.header__item .header__link:hover,
+}  */
+/* .header__item .header__link:hover,
 .header__item .header__link:focus,
 .header__title-color,
 .header__title-color {
   color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__contact-link {
+} */
+/* .header__contact-link {
   color: var(--grey);
   font-family: "Roboto";
   font-style: normal;
@@ -114,29 +114,29 @@ body {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-}
-.header__contact > .header__contact-link:not(:last-child) {
+} */
+/* .header__contact > .header__contact-link:not(:last-child) {
   margin-right: 46px;
 }
 .header__contact {
   margin-right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; */
+/* }
 .header__contact-link:hover,
 .header__contact-link:focus,
 .header__title-color:hover,
 .header__title-color:focus {
   color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__contact-link--icon:hover,
+/* } */
+/* .header__contact-link--icon:hover,
 .header__contact-link--icon:focus {
   fill: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-space {
+} */ */
+/* .icon-space {
   margin-right: 10px;
 }
 .header__item {
@@ -153,7 +153,7 @@ body {
   transform: translateY(9px);
   border-radius: 2px;
   position: absolute;
-}
+} */
 
 /* Styles for Studio main section*/
 /* 1. button section */

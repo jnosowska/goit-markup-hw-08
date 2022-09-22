@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  background: $primary-color;
+  align-items: center;
+
+  &__title {
+    color: $black;
+    font-family: $standard-font;
+    font-style: normal;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, logo-font);
+    line-height: 1.19;
+    letter-spacing: map-get($letter-spacing, standard);
+    text-decoration: none;
+
+    &-color {
+      color: $hover-text;
+    }
+  }
+
+  &__nav {
+    margin-right: 371px;
+
+    &-list {
+      display: flex;
+      margin-right: 46px;
+
+      & > &-item:not(:last-child) {
+        margin-right: 46px;
+      }
+
+      &-item {
+        position: relative;
+
+        &-link {
+          font-family: $standard-font;
+          font-style: normal;
+          font-weight: map-get($font-weight, medium);
+          font-size: map-get($font-size, standard);
+          line-height: 1.14;
+          letter-spacing: map-get($letter-spacing, links);
+          color: $secondary-text;
+        }
+
+        &-link--active::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 4px;
+          top: 28px;
+          left: 0;
+          background-color: $hover-text;
+          transform: translateY(9px);
+          border-radius: 2px;
+          position: absolute;
+        }
+        & &-link:hover,
+        & &-link:focus {
+          color: $hover-text;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-link {
+      color: $primary-text;
+      font-family: $standard-font;
+      font-style: normal;
+      font-weight: map-get($font-weight, medium);
+      font-size: map-get($font-size, standard);
+      line-height: 1.14;
+      letter-spacing: map-get($letter-spacing, links);
+      fill: $primary-text;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        color: $hover-text;
+        fill: $hover-text;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    & > &-link:not(:last-child) {
+      margin-right: 46px;
+    }
+    &-link:hover {
+      color: $hover-text;
+      fill: $hover-text;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__line {
+    border-bottom: 1px solid $background-outside;
+  }
+}
+.icon-space {
+  margin-right: 10px;
+}

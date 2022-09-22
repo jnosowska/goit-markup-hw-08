@@ -1,4 +1,4 @@
-// colors
+// 1. colors
 $primary-color: #fff;
 $primary-text: #757575;
 $black: #000;
@@ -16,7 +16,8 @@ $background: #75757580;
 $background-modal: #00000033;
 $border-color: #21212133;
 
-// styles for fonts
+// 2. styles for fonts
+
 $font-weight: (
   "regular": 400,
   "medium": 500,
@@ -30,6 +31,7 @@ $font-size: (
   "section-header": 36px,
   "logo-font": 26px,
   "main-text": 44px,
+  "modal": 12px,
 );
 $letter-spacing: (
   "standard": 0.03em,
@@ -39,8 +41,14 @@ $letter-spacing: (
 $standard-font: "Roboto", sans-serif;
 $logo-font: "Raleway", sans-serif;
 
-// mixins
-
+// 3. mixins
 @mixin center {
   margin: 0 auto;
+}
+
+// 4. reset
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
