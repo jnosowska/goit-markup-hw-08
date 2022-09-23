@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./components/header";
+@import "./components/index-main";
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/portfolio";
@@ -10,8 +11,7 @@ body {
   background-color: $background-outside;
   font-size: map-get($font-size, standard);
   letter-spacing: map-get($letter-spacing, standard);
-  margin: 0;
-  padding: 0;
+  @include nonspace;
 }
 
 .wrapper {

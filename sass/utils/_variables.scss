@@ -5,6 +5,7 @@ $black: #000;
 $hover-text: #2196f3;
 $background-footer: #2f303a;
 $background-outside: #e5e5e5;
+$background-image: #2f303a66;
 $header-line: #ececec;
 $secondary-text: #212121;
 $background-card: #f5f4fa;
@@ -22,6 +23,7 @@ $signup-hover: #0e020299;
 $portfolio-filters: #0000004d;
 $portfolio-shadow: #00000029;
 $portfolio-shadow2: #0000001f;
+$main-work: #2f303acc;
 
 // 2. styles for fonts
 
@@ -54,6 +56,25 @@ $logo-font: "Raleway", sans-serif;
 // 3. mixins
 @mixin center {
   margin: 0 auto;
+}
+@mixin nonspace {
+  margin: 0;
+  padding: 0;
+}
+@mixin flexcenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+@mixin flexposition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // 4. reset

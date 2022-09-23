@@ -5,7 +5,7 @@
 
   &__title {
     color: $black;
-    font-family: $standard-font;
+    font-family: $logo-font;
     font-style: normal;
     font-weight: map-get($font-weight, bold);
     font-size: map-get($font-size, logo-font);

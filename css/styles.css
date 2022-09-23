@@ -157,7 +157,7 @@
 
 /* Styles for Studio main section*/
 /* 1. button section */
-.main__button-section {
+/* .main__button-section {
   background-color: var(--darkgrey);
   background-image: linear-gradient(
       0deg,
@@ -174,9 +174,9 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 100%;
-}
-.main__title {
+  width: 100%; */
+/* }
+.main__buton-header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -189,8 +189,8 @@
   margin: 0px;
   padding-top: 200px;
   padding-bottom: 30px;
-}
-.main__button {
+} */
+/* .main__button-click {
   width: 200px;
   height: 50px;
   background: var(--blue);
@@ -200,8 +200,8 @@
   border: 1px solid transparent;
   cursor: pointer;
   margin-bottom: 200px;
-}
-.main__button-title {
+} */
+/* .main__button-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -209,10 +209,10 @@
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-}
+} */
 
 /* 2. Article section- our work */
-.main__articles-list {
+/* .main__articles-list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -220,8 +220,8 @@
   padding-top: 94px;
   padding-bottom: 94px;
   list-style: none;
-}
-.main__articles-header {
+} */
+/* .main__articles-header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -252,7 +252,7 @@
   letter-spacing: 0.03em;
   color: var(--grey);
 }
-.main__work {
+/* .main__work {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,10 +303,10 @@
   top: 224px;
   left: 0;
   width: 100%;
-}
+} */ */
 /* 3. Our team section */
 
-.main__team {
+/* .main__team {
   background: var(--notwhite);
   display: flex;
   flex-direction: column;
@@ -322,8 +322,8 @@
   letter-spacing: 0.03em;
   color: var(--notblack);
   margin: 0;
-  padding-top: 94px;
-}
+  padding-top: 94px; */
+/* }
 .main__team-list {
   margin-top: 0;
   padding-left: 0;
@@ -335,16 +335,16 @@
   padding-bottom: 94px;
   margin: 0;
   list-style: none;
-}
-.main__team-picture {
+} */
+/* .main__team-picture {
   width: 270px;
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0;
-}
-.main__team-text {
+} */
+/* .main__team-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -356,33 +356,33 @@
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
 }
-.main__team-textname {
+.main__team-text-name {
   font-weight: 500px;
   color: var(--notblack);
-}
-.main__team-icon {
+} */
+/* .main__team-icon {
   display: flex;
   padding-bottom: 30px;
   align-items: center;
   justify-content: center;
   margin: 0;
-}
-.main__team-icon-style {
+} */
+/* .main__team-icon-style {
   fill: var(--iconcolor);
   width: 44px;
   height: 44px;
   background-color: var(--white);
   border-radius: 50%;
-}
-.main__team-icon-style:hover {
+} */
+/* .main__team-icon-style:hover {
   fill: var(--white);
   background-color: var(--blue);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* /* Our clients section */
-.main__ourclients {
+/* .main__ourclients {
   padding-top: 94px;
   margin: 0;
   display: flex;
@@ -403,8 +403,8 @@
   color: var(--notblack);
   margin: 0;
   padding-bottom: 50px;
-}
-.main__ourclients-logo {
+} */
+/* .main__ourclients-logo {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -412,19 +412,19 @@
   gap: 30px;
   padding-bottom: 94px;
   padding-left: 0;
-}
-.main__ourclients-icon {
+} */
+/* .main__ourclients-icon {
   border: 1px solid var(--iconcolor);
   border-radius: 4px;
   width: 170px;
   height: 92px;
   fill: var(--iconcolor);
-}
-.main__ourclients-icon:hover {
+} */
+/* .main__ourclients-icon:hover {
   cursor: pointer;
   fill: var(--blue);
   border: 1px solid var(--blue);
-}
+} */
 /* Styles for footer section */
 /* .footer {
   background-color: var(--darkgrey);
@@ -530,11 +530,11 @@
   padding-top: 14px;
   margin-bottom: 15px;
   padding-bottom: 14px; */
-}
+/* }
 .footer__sign-up {
   background-color: var(--darkgrey);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   /* border-radius: 4px;
   width: 358px;
   height: 50px;
