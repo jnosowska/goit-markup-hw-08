@@ -65,9 +65,7 @@
 
   &__contact {
     margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexposition;
 
     &-link {
       color: $primary-text;
@@ -78,8 +76,7 @@
       line-height: 1.14;
       letter-spacing: map-get($letter-spacing, links);
       fill: $primary-text;
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       align-items: center;
 
       &:hover,

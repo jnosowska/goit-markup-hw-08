@@ -491,9 +491,9 @@
   width: 30px;
   height: 30px;
   fill: #fff;
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .is-hidden {
