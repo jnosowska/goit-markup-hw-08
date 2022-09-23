@@ -478,7 +478,7 @@
           <div class="footer__contact">
             <h3>
               <a href="index.html" class="footer__logo"
-                ><span class="footer__logo--color">Web</span>Studio</a
+                ><span class="footer__logo-color">Web</span>Studio</a
               >
             </h3>
             <address>
@@ -499,7 +499,7 @@
             <h3 class="footer__social-header">Dołącz do nas</h3>
             <ul class="footer__social-icons">
               <li>
-                <svg class="footer__icon">
+                <svg class="footer__social-icon">
                   <use
                     xlink:href="./images/icons.svg#icon-instagram"
                     width="20"
@@ -510,7 +510,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="footer__icon">
+                <svg class="footer__social-icon">
                   <use
                     xlink:href="./images/icons.svg#icon-twitter"
                     width="20"
@@ -521,7 +521,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="footer__icon">
+                <svg class="footer__social-icon">
                   <use
                     xlink:href="./images/icons.svg#icon-facebook"
                     width="20"
@@ -532,7 +532,7 @@
                 </svg>
               </li>
               <li>
-                <svg class="footer__icon">
+                <svg class="footer__social-icon">
                   <use
                     xlink:href="./images/icons.svg#icon-linkedin"
                     width="20"
@@ -549,13 +549,13 @@
             <input
               type="email"
               name="email"
-              class="footer__sign-up"
+              class="footer__newsletter-sign-up"
               placeholder="Email"
             />
           </div>
           <button type="submit" class="footer__button">
             Zapisz się
-            <svg class="footer__newsletter-icon">
+            <svg class="footer__button-icon">
               <use
                 xlink:href="./images/icons.svg#icon-aeroplane"
                 width="24"
@@ -584,10 +584,10 @@
             <input
               type="text"
               name="user-name"
-              class="modal__input"
+              class="modal__label-input"
               id="full-name"
             />
-            <svg class="modal__icon modal__icon-person">
+            <svg class="modal__label-icon modal__label-person">
               <use
                 xlink:href="./images/icons.svg#icon-person"
                 width="20"
@@ -601,10 +601,10 @@
             <input
               type="tel"
               name="phone_number"
-              class="modal__input"
+              class="modal__label-input"
               id="phone_number"
             />
-            <svg class="modal__icon modal__icon-phone">
+            <svg class="modal__label-icon modal__label-phone">
               <use
                 xlink:href="./images/icons.svg#icon-phone"
                 width="20"
@@ -614,8 +614,13 @@
           </label>
           <label for="email" class="modal__label">
             Email
-            <input type="email" name="email" class="modal__input" id="email" />
-            <svg class="modal__icon modal__icon-mail">
+            <input
+              type="email"
+              name="email"
+              class="modal__label-input"
+              id="email"
+            />
+            <svg class="modal__label-icon modal__label-mail">
               <use
                 xlink:href="./images/icons.svg#icon-email"
                 width="25"
@@ -628,11 +633,15 @@
             <textarea
               name="comment"
               placeholder="Wprowadź tekst"
-              class="modal__text-area modal__comment"
+              class="modal__label-text-area modal__label-comment"
             ></textarea>
           </label>
           <div class="modal__privacy">
-            <input type="checkbox" id="check" class="modal__checkmark" />
+            <input
+              type="checkbox"
+              id="check"
+              class="modal__privacy-checkmark"
+            />
             <label for="check" class="modal__privacy-label">
               Oświadczam, iż akceptuję
               <a href="" class="modal__privacy-link">Regulamin</a> i

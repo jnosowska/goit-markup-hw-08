@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./components/header";
 @import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio";
 
 body {
   color: $primary-text;

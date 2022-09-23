@@ -15,12 +15,20 @@ $footer-icon: #ffffff1a;
 $background: #75757580;
 $background-modal: #00000033;
 $border-color: #21212133;
+$submit: blue;
+$footer-newsletter: #00000026;
+$footer-signup: #ffffff4d;
+$signup-hover: #0e020299;
+$portfolio-filters: #0000004d;
+$portfolio-shadow: #00000029;
+$portfolio-shadow2: #0000001f;
 
 // 2. styles for fonts
 
 $font-weight: (
   "regular": 400,
   "medium": 500,
+  "checkbox": 600,
   "bold": 700,
   "extrabold": 900,
 );
@@ -32,6 +40,8 @@ $font-size: (
   "logo-font": 26px,
   "main-text": 44px,
   "modal": 12px,
+  "modal-header": 20px,
+  "checkmark": 9px,
 );
 $letter-spacing: (
   "standard": 0.03em,
