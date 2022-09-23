@@ -632,8 +632,7 @@
   gap: 8px;
 }
 .modal .modal__privacy-checkmark {
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   width: 16px;
   height: 15px;
