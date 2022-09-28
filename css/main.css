@@ -172,6 +172,17 @@
   color: #212121;
   margin-bottom: 10px;
 }
+.main__articles-text {
+  width: 270px;
+  height: 75px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 
 .main__work {
   display: flex;

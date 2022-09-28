@@ -73,6 +73,17 @@
     color: $secondary-text;
     margin-bottom: 10px;
   }
+  &-text {
+    width: 270px;
+    height: 75px;
+    font-family: $standard-font;
+    font-style: normal;
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-size, standard);
+    line-height: 1.71;
+    letter-spacing: map-get($letter-spacing, standard);
+    color: $primary-text;
+  }
 }
 
 .main__work {
