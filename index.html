@@ -77,6 +77,19 @@
               +48 111 111 111</a
             >
           </div>
+          <button
+            class="header__mobile js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header__mobile-menu">
+              <use
+                xlink:href="./images/icons.svg#icon-mobile-menu"
+                width="24"
+                height="16"
+              ></use>
+            </svg>
+          </button>
         </div>
       </header>
       <div class="header__line"></div>
@@ -655,7 +668,70 @@
           <button type="submit" class="modal__send-button">Wyślij</button>
         </div>
       </div>
+      <div class="mobile js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile__close" width="19" height="19">
+            <use
+              xlink:href="./images/icons.svg#icon-x"
+              width="18.67"
+              height="18.67"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="mobile__menu">
+          <li class="mobile__menu-links">
+            <a href="./index.html" class="mobile__menu-link">Agencja</a>
+          </li>
+          <li clss="mobile__menu-links">
+            <a href="./portfolio.html" class="mobile__menu-link">Portfolio</a>
+          </li>
+          <li class="mobile__menu-links">
+            <a href="./contact.html" class="mobile__menu-link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile__nav">
+          <ul class="mobile__contact">
+            <li>
+              <a href="tel:+48111111111" class="mobile__contact-phone"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile__contact-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__social">
+            <li>
+              <a href="https://instagram.com" class="mobile__social-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://twitter.com" class="mobile__social-link"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://facebook.com" class="mobile__social-link"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://linkedin.com" class="mobile__social-link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

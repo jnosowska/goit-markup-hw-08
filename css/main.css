@@ -839,6 +839,125 @@
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.mobile {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 302px;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  margin: 0;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+.mobile__close {
+  width: 19px;
+  height: 19px;
+}
+.mobile__menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.mobile__menu-links {
+  display: flex;
+  flex-direction: column;
+}
+.mobile__menu-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile__menu-link:hover, .mobile__menu-link:focus {
+  color: #2196f3;
+}
+.mobile__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 0;
+  padding: 0;
+}
+.mobile__contact {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mobile__contact-phone {
+  font-size: 34px;
+  font-weight: 500;
+  color: #2196f3;
+}
+.mobile__contact-mail {
+  font-size: 24px;
+  font-weight: 500;
+  color: #757575;
+}
+.mobile__social {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.mobile__social-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile__social-link--style {
+  color: #757575;
+}
+
+.menu-toggle {
+  min-height: 19px;
+  min-width: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  fill: #212121;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.menu-toggle.is-open {
+  transform: translateX(0);
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196f3;
+}
+
 body {
   color: #757575;
   font-family: "Roboto", sans-serif;
