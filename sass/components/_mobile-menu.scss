@@ -81,7 +81,7 @@
       letter-spacing: map-get($letter-spacing, links);
       color: $hover-text;
       &--style {
-        color: $primary-text;
+        color: $icon-bacground;
       }
     }
   }
