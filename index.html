@@ -561,27 +561,30 @@
               </li>
             </ul>
           </div>
-          <div class="footer__newsletter">
-            <p class="footer__newsletter-header">Zapisz się do newslettera</p>
-            <input
-              type="email"
-              name="email"
-              class="footer__newsletter-sign-up"
-              placeholder="Email"
-            />
+          <div class="footer__mail">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-header">Zapisz się do newslettera</p>
+              <input
+                type="email"
+                name="email"
+                class="footer__newsletter-sign-up"
+                placeholder="Email"
+              />
+            </div>
+
+            <button type="submit" class="footer__button">
+              Zapisz się
+              <svg class="footer__button-icon">
+                <use
+                  xlink:href="./images/icons.svg#icon-aeroplane"
+                  width="24"
+                  height="24"
+                  x="5"
+                  y="5"
+                ></use>
+              </svg>
+            </button>
           </div>
-          <button type="submit" class="footer__button">
-            Zapisz się
-            <svg class="footer__button-icon">
-              <use
-                xlink:href="./images/icons.svg#icon-aeroplane"
-                width="24"
-                height="24"
-                x="5"
-                y="5"
-              ></use>
-            </svg>
-          </button>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
@@ -672,7 +675,7 @@
         <button class="menu-toggle js-close-menu">
           <svg class="mobile__close" width="19" height="19">
             <use
-              xlink:href="./images/icons.svg#icon-x"
+              xlink:href="./images/icons.svg#icon-x-"
               width="18.67"
               height="18.67"
             ></use>
@@ -732,6 +735,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
