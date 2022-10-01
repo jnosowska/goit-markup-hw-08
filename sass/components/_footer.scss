@@ -235,8 +235,7 @@ p {
       flex-direction: row;
     }
     &__newsletter {
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
 
       &-header {
         text-align: left;

@@ -643,8 +643,7 @@ p {
     flex-direction: row;
   }
   .footer__newsletter {
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
   }
   .footer__newsletter-header {
     text-align: left;
