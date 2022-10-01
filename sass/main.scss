@@ -22,7 +22,30 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 100%;
   @include center;
   height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    @include center;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    @include center;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    @include center;
+    height: 100%;
+  }
 }
