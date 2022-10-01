@@ -3,6 +3,8 @@
   background: $primary-color;
   align-items: center;
   justify-content: space-between;
+  margin-right: 15px;
+  margin-left: 15px;
   &__title {
     color: $black;
     font-family: $logo-font;
@@ -35,6 +37,9 @@
         fill: $hover-text;
       }
     }
+  }
+  &__line {
+    border-bottom: 1px solid $background-outside;
   }
 }
 @media (min-width: 768px) {
@@ -122,9 +127,6 @@
         fill: $hover-text;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-    }
-    &__line {
-      border-bottom: 1px solid $background-outside;
     }
   }
   .icon-space {
