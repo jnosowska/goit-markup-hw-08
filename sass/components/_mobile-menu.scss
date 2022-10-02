@@ -33,6 +33,7 @@
   &.is-open {
     transform: translateX(0);
   }
+
   &__close {
     width: 19px;
     height: 19px;
@@ -99,7 +100,7 @@
   }
 }
 
-.menu-toggle {
+.mobile .menu-toggle {
   min-height: 19px;
   min-width: 19px;
   @include flexposition;

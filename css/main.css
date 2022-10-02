@@ -164,14 +164,15 @@
 }
 .main__button {
   background-color: #e5e5e5;
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/imgbutton.jpg);
-  background-size: 1600px;
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/img-bg-mobile.jpg);
+  background-size: 767px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 400px;
 }
 .main__button-container {
   display: flex;
@@ -179,11 +180,11 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 .main__button-header {
-  font-size: 44px;
+  font-size: 26px;
   color: #fff;
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -205,20 +206,23 @@
 }
 
 .main__articles {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .main__articles-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 30px;
   margin: 0;
+  padding-left: 0;
 }
 .main__articles-icon {
   background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  width: 270px;
+  width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,9 +237,10 @@
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  text-align: center;
 }
 .main__articles-text {
-  width: 270px;
+  width: 450px;
   height: 75px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -247,56 +252,7 @@
 }
 
 .main__work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.main__work-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin: 0%;
-}
-.main__work-list {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 0%;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-.main__work-item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__work-text {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 90px;
-  margin: 0;
-  position: absolute;
-  top: 224px;
-  left: 0;
-  width: 100%;
+  display: none;
 }
 
 .main__team {
@@ -324,11 +280,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 30px;
   padding-bottom: 94px;
 }
-.main__team-picture {
-  width: 270px;
+.main__team-pictures {
+  width: 450px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1215686275), 0px 1px 1px rgba(0, 0, 0, 0.1607843137), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -629,6 +586,8 @@ p {
     align-items: center;
     flex-direction: row;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
   .footer__contact {
     margin-right: 70px;
@@ -636,7 +595,7 @@ p {
   }
   .footer__social {
     flex-direction: row;
-    margin-right: 90px;
+    margin-right: 70px;
   }
   .footer__social-header {
     text-align: left;
@@ -664,7 +623,7 @@ p {
   .footer__button {
     padding-top: 5px;
     margin-left: 12px;
-    margin-top: 88px;
+    margin-top: 91px;
   }
 }
 .is-hidden {
@@ -1385,7 +1344,7 @@ p {
   color: #afb1b8;
 }
 
-.menu-toggle {
+.mobile .menu-toggle {
   min-height: 19px;
   min-width: 19px;
   display: flex;
@@ -1403,7 +1362,7 @@ p {
   top: 16px;
   right: 16px;
 }
-.menu-toggle:hover, .menu-toggle:focus {
+.mobile .menu-toggle:hover, .mobile .menu-toggle:focus {
   fill: #2196f3;
 }
 
@@ -1423,10 +1382,12 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 768px) {

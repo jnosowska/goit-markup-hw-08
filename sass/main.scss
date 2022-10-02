@@ -21,10 +21,12 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   @include center;
   height: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 768px) {
