@@ -291,6 +291,10 @@
   border-radius: 0px 0px 4px 4px;
   margin: 0;
 }
+.main__team-picture {
+  width: 450px;
+  height: 460px;
+}
 .main__team-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -329,7 +333,8 @@
 }
 
 .main__ourclients {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -347,15 +352,17 @@
   text-align: center;
   color: #212121;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .main__ourclients-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-basis: min 450px;
   gap: 30px;
-  padding-bottom: 94px;
   padding-left: 0;
+  margin: 0;
 }
 .main__ourclients-icon {
   border: 1px solid #afb1b8;

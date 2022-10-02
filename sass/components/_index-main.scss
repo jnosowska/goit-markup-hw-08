@@ -91,7 +91,6 @@
 .main__work {
   display: none;
 }
-
 .main__team {
   background: $background-card;
   @include flex(column);
@@ -124,6 +123,11 @@
     border-radius: 0px 0px 4px 4px;
     margin: 0;
   }
+  &-picture {
+    width: 450px;
+    height: 460px;
+  }
+
   &-text {
     font-family: $standard-font;
     font-style: normal;
@@ -162,7 +166,8 @@
   }
 }
 .main__ourclients {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0;
   @include flexcenter(column);
   width: 100%;
@@ -177,13 +182,16 @@
     text-align: center;
     color: $secondary-text;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   &-logo {
     @include flexposition;
+    flex-wrap: wrap;
+    flex-basis: min 450px;
     gap: 30px;
-    padding-bottom: 94px;
+
     padding-left: 0;
+    margin: 0;
   }
   &-icon {
     border: 1px solid $icon-bacground;
