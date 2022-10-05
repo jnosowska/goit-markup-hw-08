@@ -1,5 +1,3 @@
-
-
 .header {
   display: flex;
   background: $primary-color;
@@ -32,10 +30,12 @@
     border: none;
     background-color: $primary-color;
     cursor: pointer;
+    margin-right: 15px;
     &-menu {
       width: 24px;
-      height: 17px;
-      &:hover {
+      height: 16px;
+      &:hover,
+      &:focus {
         fill: $hover-text;
       }
     }
@@ -46,10 +46,11 @@
 }
 @media (min-width: 768px) {
   .header {
+    width: 100%;
     display: flex;
     background: $primary-color;
     align-items: center;
-    margin-right: 83px;
+    margin-right: 0;
     &__title {
       margin-left: 15px;
     }
