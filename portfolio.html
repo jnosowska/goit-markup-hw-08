@@ -32,15 +32,15 @@
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-list-item">
-                <a
-                  href="index.html"
-                  class="header__nav-list-item-link header__nav-list-item-link--active"
-                  ><span class="header__title-color">Agencja</span></a
+                <a href="index.html" class="header__nav-list-item-link"
+                  >Agencja</a
                 >
               </li>
               <li class="header__nav-list-item">
-                <a href="portfolio.html" class="header__nav-list-item-link"
-                  >Portfolio</a
+                <a
+                  href="portfolio.html"
+                  class="header__nav-list-item-link header__nav-list-item-link--active"
+                  ><span class="header__title-color">Portfolio</span></a
                 >
               </li>
               <li class="header__nav-list-item">
@@ -108,7 +108,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio1.jpg"
+                    src="images/portfolio-1.jpg"
+                    srcset="images/portfolio-1@2x.jpg 2x"
                     alt="Strona internetowa"
                     class="product__list-picture"
                   />
@@ -131,7 +132,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio2.jpg"
+                    src="images/portfolio-2.jpg"
+                    srcset="images/portfolio-2@2x.jpg 2x"
                     alt="Gra w koszykówke"
                     class="product__list-picture"
                   />
@@ -156,7 +158,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio3.jpg"
+                    src="images/portfolio-3.jpg"
+                    srcset="images/portfolio-3@2x.jpg 2x"
                     alt="Napis Seafood"
                     class="product__list-picture"
                   />
@@ -179,7 +182,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio4.jpg"
+                    src="images/portfolio-4.jpg"
+                    srcset="images/portfolio-4@2x.jpg 2x"
                     alt="Słuchawki bezprzewodowe"
                     class="product__list-picture"
                   />
@@ -202,7 +206,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio5.jpg"
+                    src="images/portfolio-5.jpg"
+                    srcset="images/portfolio-5@2x.jpg 2x"
                     alt="Dwa pudełka"
                     class="product__list-picture"
                   />
@@ -225,7 +230,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio6.jpg"
+                    src="images/portfolio-6.jpg"
+                    srcset="images/portfolio-6@2x.jpg 2x"
                     alt="Monitor"
                     class="product__list-picture"
                   />
@@ -250,7 +256,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio7.jpg"
+                    src="images/portfolio-7.jpg"
+                    srcset="images/portfolio-7@2x.jpg 2x"
                     alt="Otwarty magazyn"
                     class="product__list-picture"
                   />
@@ -275,7 +282,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio8.jpg"
+                    src="images/portfolio-8.jpg"
+                    srcset="images/portfolio-8@2x.jpg 2x"
                     alt="Etykietka"
                     class="product__list-picture"
                   />
@@ -298,7 +306,8 @@
               <figure class="product__list-card">
                 <div class="product__list-overflow">
                   <img
-                    src="images/portfolio9.jpg"
+                    src="images/portfolio-9.jpg"
+                    srcset="images/portfolio-9@2x.jpg 2x"
                     alt="Pisanie na laptopie"
                     class="product__list-picture"
                   />
@@ -417,6 +426,68 @@
           </div>
         </div>
       </footer>
+      <div class="mobile js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile__close" width="19" height="19">
+            <use
+              xlink:href="./images/icons.svg#icon-x-"
+              width="18.67"
+              height="18.67"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="mobile__menu">
+          <li class="mobile__menu-links">
+            <a href="./index.html" class="mobile__menu-link">Agencja</a>
+          </li>
+          <li clss="mobile__menu-links">
+            <a href="./portfolio.html" class="mobile__menu-link">Portfolio</a>
+          </li>
+          <li class="mobile__menu-links">
+            <a href="./contact.html" class="mobile__menu-link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile__nav">
+          <ul class="mobile__contact">
+            <li>
+              <a href="tel:+48111111111" class="mobile__contact-phone"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile__contact-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__social">
+            <li>
+              <a href="https://instagram.com" class="mobile__social-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://twitter.com" class="mobile__social-link"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://facebook.com" class="mobile__social-link"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile__social-link mobile__social-link--style">|</li>
+            <li>
+              <a href="https://linkedin.com" class="mobile__social-link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script defer src="js/mobile-menu.js"></script>
   </body>
