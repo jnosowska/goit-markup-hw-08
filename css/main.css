@@ -900,7 +900,7 @@ p {
 .modal {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 320px;
   min-height: 609px;
   left: 50%;
   top: 50%;
@@ -958,7 +958,7 @@ p {
   fill: #2196f3;
 }
 .modal__label-input {
-  width: 370px;
+  width: 250px;
   height: 40px;
   display: block;
   margin: 4px 0 0 0;
@@ -988,8 +988,8 @@ p {
   left: 52px;
 }
 .modal__label-text-area {
-  width: 370px;
-  height: 40px;
+  width: 250px;
+  height: 50px;
   display: block;
   margin: 4px 0 0 0;
   border-radius: 4px;
@@ -1004,7 +1004,7 @@ p {
 }
 .modal__label-comment {
   resize: none;
-  width: 370px;
+  width: 250px;
   height: 120px;
   padding: 12px 16px;
   border-radius: 4px;
@@ -1029,7 +1029,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 3px;
-  margin-top: 4px;
+  margin-top: 5px;
   margin-left: 40px;
   margin-top: 13px;
 }
@@ -1087,7 +1087,7 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 31px 125px 40px 125px;
+  margin: 15px 60px;
   cursor: pointer;
 }
 .modal__send-button:hover {
