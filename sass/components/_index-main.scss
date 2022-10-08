@@ -13,8 +13,7 @@
   background-position: center;
   @include nonspace;
   width: 100%;
-  height: 400px;
-
+  min-height: 400px;
   min-width: 320px;
   &-container {
     @include flexcenter(column);
