@@ -23,7 +23,7 @@
   background-color: $primary-color;
   z-index: 999;
   @include flex(column);
-  gap: 302px;
+  gap: 200px;
   margin: 0;
   padding-top: 48px;
   padding-left: 40px;
@@ -41,7 +41,7 @@
   &__menu {
     @include nonspace;
     @include flex(column);
-    gap: 36px;
+    gap: 30px;
 
     &-links {
       @include flex(column);
@@ -63,13 +63,13 @@
   }
   &__nav {
     @include flex(column);
-    gap: 64px;
+    gap: 55px;
     @include nonspace;
   }
   &__contact {
     @include nonspace;
     @include flex(column);
-    gap: 32px;
+    gap: 30px;
     &-phone {
       font-size: 34px;
       font-weight: map-get($font-weight, medium);
@@ -83,6 +83,7 @@
   }
   &__social {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     @include nonspace;
     &-link {

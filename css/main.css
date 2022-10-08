@@ -1518,7 +1518,7 @@ p {
   z-index: 999;
   display: flex;
   flex-direction: column;
-  gap: 302px;
+  gap: 200px;
   margin: 0;
   padding-top: 48px;
   padding-left: 40px;
@@ -1537,7 +1537,7 @@ p {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 30px;
 }
 .mobile__menu-links {
   display: flex;
@@ -1558,7 +1558,7 @@ p {
 .mobile__nav {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 55px;
   margin: 0;
   padding: 0;
 }
@@ -1567,7 +1567,7 @@ p {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 30px;
 }
 .mobile__contact-phone {
   font-size: 34px;
@@ -1581,6 +1581,7 @@ p {
 }
 .mobile__social {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 0;
   padding: 0;
