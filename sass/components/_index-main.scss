@@ -427,9 +427,8 @@
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-  screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (max-width: 767px) and (min-resolution: 192dpi),
-  screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .main__button {
     background-image: linear-gradient(
         0deg,
@@ -440,9 +439,8 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .main__button {
     background-image: linear-gradient(
         0deg,
@@ -453,9 +451,8 @@
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .main__button {
     background-image: linear-gradient(
         0deg,
